@@ -1,0 +1,33 @@
+products:
+    path: '/api/products'
+    controller: 'App\Controller\ProductController::index'
+    methods: ['GET']
+
+products_show:
+    path: '/api/products/{id}'
+    controller: 'App\Controller\ProductController::show'
+    methods: ['GET']
+
+products_create:
+    path: '/api/products'
+    controller: 'App\Controller\ProductController::create'
+    methods: ['POST']
+
+products_update:
+    path: '/api/products/{id}'
+    controller: 'App\Controller\ProductController::update'
+    methods: ['PUT']
+
+products_delete:
+    path: '/api/products/{id}'
+    controller: 'App\Controller\ProductController::delete'
+    methods: ['DELETE']
+
+app_register:
+    path: '/api/register'
+    controller: 'App\Controller\UserController::register'
+    methods: ['POST']
+
+app_login:
+    path: '/api/login_check'
+    controller: 'App\Controller\UserController::login_check'
